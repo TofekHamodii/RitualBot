@@ -2,12 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '$'
 
-
- client.on('ready', () => {
-  client.user.setGame(`Work .`,'Watching');
-
-});
-
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`Work`,"Watching")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
